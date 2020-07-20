@@ -28,6 +28,7 @@ ul span {
 
 .heading p {
   font-weight: 400;
+  margin-top: -1rem;
 }
 
 .body h2 {
