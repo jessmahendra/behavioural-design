@@ -2,10 +2,14 @@ body {
   color: white;
   font-family: "Roboto";
   font-size: 16px;
-  margin: 3rem auto 4rem auto;
+  margin: 3rem 1rem 4rem 1rem;
   max-width: 722px;
   background-color: #282b63;
   line-height: 1.5rem;
+}
+
+.logo {
+  margin-left: -0.3rem;
 }
 
 ul {
@@ -15,6 +19,11 @@ ul {
 
 ul li {
   display: flex;
+  align-items: flex-start;
+}
+
+ul li img {
+  padding-top: 0.25rem;
 }
 
 ul span {
@@ -28,7 +37,7 @@ ul span {
 
 .heading p {
   font-weight: 400;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
 }
 
 .body h2 {
@@ -45,10 +54,11 @@ ul span {
 
 .formlayout {
   background-color: #1d1f49;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 -1rem 0 -1rem;
 }
 
 .formlayout h2 {
@@ -73,7 +83,7 @@ ul span {
 
 input {
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   display: inline-block;
   background: rgba(84, 84, 84, 0.34);
   border-radius: 4px 0px 0px 4px;
@@ -83,9 +93,9 @@ input {
   font-size: 1rem;
 }
 
-.email {
+/* .email {
   padding-bottom: 1.5rem;
-}
+} */
 
 ::placeholder {
   font-family: "Roboto";
@@ -111,4 +121,14 @@ button {
   font-weight: 700;
   border-width: 0;
   box-shadow: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 45rem) {
+  body {
+    margin: 2rem auto 8rem auto;
+  }
+  .formlayout {
+    padding: 3rem;
+    margin: 0 0 0 0;
+  }
 }
