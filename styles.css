@@ -12,6 +12,25 @@ body {
   margin-left: -0.3rem;
 } */
 
+@media screen and (min-width: 45rem) {
+  .column {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem 3rem;
+  }
+  .para1 {
+    grid-column: span 3;
+  }
+  .image {
+    display: grid;
+    place-items: center;
+    grid-column: span 3;
+  }
+  /* .white {
+    grid-column: 4/7;
+  } */
+}
+
 ul {
   list-style-type: none;
   padding-inline-start: 0px;
